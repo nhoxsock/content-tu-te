@@ -1,0 +1,103 @@
+body
+	font-family: Roboto
+	section.home_banner
+		.item
+			background: url('../img/banner.png') no-repeat
+			height: 300px
+			position: relative
+			.cover
+				border: 7px solid #385266
+				display: flex
+				flex-direction: column
+				text-align: center
+				height: 150px
+				width: 300px
+				justify-content: center
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				margin: auto
+				h2
+					letter-spacing: .1rem
+					color: #ffffff
+					font-size: 1.2rem
+				p
+					color: #f16904
+					font-size: .8rem
+				img
+					width: 50px
+					position: absolute
+					top: -20px
+					right: -30px
+		+media-breakpoint-up(md)
+			.item
+				height: 500px
+				.cover
+					border: 12px solid #385266
+					width: 500px
+					height: 250px
+					h2
+						font-size: 2rem
+						letter-spacing: .5rem
+					p
+						font-size: 1.1rem
+					img
+						width: 120px
+						top: -30px
+						right: -80px
+		.owl-carousel
+			.owl-dots
+				position: absolute
+				bottom: 20px
+				z-index: 2
+				left: 50%
+				transform: translateX(-50%)
+	section.home_banner2
+		background: url('../img/banner2.png')
+		.tt
+			text-align: center
+			margin-top: .7rem
+			h2
+				font-size: 1.4rem
+		figure
+			text-align: center
+			.cv1
+				background: url('../img/a_1.png') no-repeat center center
+				background-size: cover
+				display: inline-block
+				margin: .6rem 0
+				padding: 3rem
+				img
+					width: 50px
+			.cv2
+				background: url('../img/a_2.png') no-repeat center center
+				background-size: cover
+				display: inline-block
+				margin: .6rem 0
+				padding: 3rem
+				img
+					width: 50px
+			.cv3
+				background: url('../img/a_3.png') no-repeat center center
+				background-size: cover
+				display: inline-block
+				margin: .6rem 0
+				padding: 3rem
+				img
+					width: 50px
+			figcaption
+				text-align: center
+				h3
+					font-size: 1.2rem
+				p
+					font-size: .8rem
+					color: darken(#ffffff, 50%)
+		+media-breakpoint-up(md)
+			.tt
+				h2
+					font-size: 1.8rem
+			figure
+				figcaption
+					p
